@@ -1,7 +1,7 @@
 "use client";
 import { ChartLineUp } from "@phosphor-icons/react/dist/ssr/ChartLineUp";
 import { Sidebar } from "./ui/sidebar";
-import { Cart } from "./ui/cards/card";
+import { Card } from "./ui/cards/card";
 
 export default function Home() {
   return (
@@ -15,13 +15,24 @@ export default function Home() {
             <span className="text-2xl font-bold">Início</span>
           </div>
 
-          <div className="pt-12">
+          <div className="pt-12 overflow-auto max-h-screen">
             <h2>Avaliações mais recentes</h2>
 
-            <Cart />
-            <Cart />
-            <Cart />
-            <Cart />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
         </section>
       </div>

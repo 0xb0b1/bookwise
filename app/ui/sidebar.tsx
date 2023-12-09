@@ -28,9 +28,9 @@ export const Sidebar = (props: {}) => {
   ] as const;
 
   return (
-    <div className="w-[232px] bg-gray-800 max-h-screen p-5 text-gray-200 bg-background rounded-xl">
+    <div className="w-[232px] bg-gray-800 max-h-screen p-12 text-gray-200 bg-background rounded-xl">
       <div className="flex flex-col h-full items-center justify-between">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-between">
           <img src="/logo.svg" alt="Logo" />
           <ul className="pt-12 flex flex-col gap-8">
             {navLinksMap?.map((item) => (
