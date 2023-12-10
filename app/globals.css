@@ -27,17 +27,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
-}
-
-::-webkit-scrollbar-track {
-  background: #252D4A;        
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 2px;      
-  border: 2px solid #8381D9;  
+  display: none;
 }
