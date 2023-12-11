@@ -1,13 +1,16 @@
 "use client";
 import React from "react";
 import { Sidebar } from "../ui/sidebar";
-import { Card } from "../ui/cards/card";
 import { User } from "@phosphor-icons/react/dist/ssr/User";
 import { MagnifyingGlass } from "@phosphor-icons/react/dist/ssr/MagnifyingGlass";
 import { BookOpen } from "@phosphor-icons/react/dist/ssr/BookOpen";
 import { Books } from "@phosphor-icons/react/dist/ssr/Books";
 
 import { booksMock } from "@/data/books";
+import { UserList } from "@phosphor-icons/react/dist/ssr/UserList";
+import { BookmarkSimple } from "@phosphor-icons/react/dist/ssr/BookmarkSimple";
+import { CommentCard } from "../ui/cards/comment-card";
+import { BookCard } from "../ui/cards/book-card";
 
 export default function Profile() {
   return (
@@ -22,8 +25,8 @@ export default function Profile() {
           </div>
 
           <div className="pt-12 flex">
-            <div className="min-w-[628px] w-full">
-              <div className="w-full h-12 relative">
+            <div className="min-w-[628px] w-full overflow-auto">
+              <div className="w-full h-12 relative mb-8">
                 <input
                   className="w-full h-12 border-[1px] px-5 py-[14px] border-solid border-gray-500 bg-gray-800 rounded-[4px] focus:outline-none
                   focus:border-[1px] focus:border-green-200"
@@ -35,8 +38,23 @@ export default function Profile() {
                 </button>
               </div>
 
-              <div className="">
-                <Card {...booksMock[0]} />
+              <div className="max-w-screen">
+                <div className="mt-4">
+                  <h2>Há 4 meses</h2>
+                  <BookCard {...booksMock[0]} />
+                </div>
+                <div className="mt-4">
+                  <h2>Há 2 meses</h2>
+                  <BookCard {...booksMock[1]} />
+                </div>
+              </div>
+              <div className="mt-4">
+                <h2>Ontem</h2>
+                <BookCard {...booksMock[2]} />
+              </div>
+              <div className="mt-4">
+                <h2>Há 2 dias</h2>
+                <BookCard {...booksMock[3]} />
               </div>
             </div>
 
@@ -68,7 +86,7 @@ export default function Profile() {
                       </p>
                     </div>
                     <div className="flex items-center gap-5">
-                      <BookOpen className="text-green-100" size={38} />
+                      <Books className="text-green-100" size={38} />
                       <p className="flex flex-col">
                         <strong className="text-base font-bold">3</strong>
                         <span className="text-base text-gray-300">
@@ -77,7 +95,7 @@ export default function Profile() {
                       </p>
                     </div>
                     <div className="flex items-center gap-5">
-                      <Books className="text-green-100" size={38} />
+                      <UserList className="text-green-100" size={38} />
                       <p className="flex flex-col">
                         <strong className="text-base font-bold">3</strong>
                         <span className="text-base text-gray-300">
@@ -86,7 +104,7 @@ export default function Profile() {
                       </p>
                     </div>
                     <div className="flex items-center gap-5">
-                      <Books className="text-green-100" size={38} />
+                      <BookmarkSimple className="text-green-100" size={38} />
                       <p className="flex flex-col">
                         <strong className="text-base font-bold">Horror</strong>
                         <span className="text-base text-gray-300">

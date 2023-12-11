@@ -1,11 +1,11 @@
 "use client";
 import { ChartLineUp } from "@phosphor-icons/react/dist/ssr/ChartLineUp";
 import { Sidebar } from "./ui/sidebar";
-import { Card } from "./ui/cards/card";
 import Link from "next/link";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr/CaretRight";
 import { PopularCard } from "./ui/cards/popular-card";
 import { booksMock } from "@/data/books";
+import { CommentCard } from "./ui/cards/comment-card";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
             <div className="overflow-auto max-h-screen h-full">
               <h2>Avaliações mais recentes</h2>
 
-              {booksMock?.map((book: any) => <Card {...book} />)}
+              {booksMock?.map((book: any) => <CommentCard {...book} />)}
             </div>
 
             <div className="ml-8 max-w-[324px] w-screen">
