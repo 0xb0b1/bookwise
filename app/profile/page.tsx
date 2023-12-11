@@ -37,7 +37,6 @@ export default function Profile() {
 
               <div className="">
                 <Card {...booksMock[0]} />
-                <Card {...booksMock[1]} />
               </div>
             </div>
 
