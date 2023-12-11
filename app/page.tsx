@@ -39,9 +39,7 @@ export default function Home() {
               </div>
 
               <div className="overflow-auto max-h-screen">
-                <div className="">
-                  {booksMock?.map((book: any) => <PopularCard {...book} />)}
-                </div>
+                {booksMock?.map((book: any) => <PopularCard {...book} />)}
               </div>
             </div>
           </div>
