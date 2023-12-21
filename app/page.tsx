@@ -8,6 +8,8 @@ import { booksMock } from "@/data/books";
 import { CommentCard } from "./ui/cards/comment-card";
 
 export default function Home() {
+  // hello world
+  // teste 1 2 3
   return (
     <main className="flex gap-24 min-h-screen bg-gray-800">
       <div className="flex flex-row pt-4 pl-4">
@@ -23,7 +25,7 @@ export default function Home() {
             <div className="overflow-auto max-h-screen h-full">
               <h2>Avaliações mais recentes</h2>
 
-              {booksMock?.map((book: any) => <CommentCard {...book} />)}
+              {booksMock?.map((book: any) => <CommentCard key={book.id} {...book} />)}
             </div>
 
             <div className="ml-8 max-w-[324px] w-screen">

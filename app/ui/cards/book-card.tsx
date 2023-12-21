@@ -2,7 +2,7 @@ import React from "react";
 import { Rating } from "../rating";
 
 export const BookCard = (props: {}) => {
-  const { image, title, author, description } = props;
+  const { image, title, author, description, id } = props;
 
   return (
     <div className="min-w-[624px] w-full mt-2 mr-4 rounded-lg border-2 border-solid border-gray-700 bg-gray-700 cursor-pointer hover:border-gray-500">

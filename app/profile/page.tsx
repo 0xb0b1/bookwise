@@ -9,7 +9,6 @@ import { Books } from "@phosphor-icons/react/dist/ssr/Books";
 import { booksMock } from "@/data/books";
 import { UserList } from "@phosphor-icons/react/dist/ssr/UserList";
 import { BookmarkSimple } from "@phosphor-icons/react/dist/ssr/BookmarkSimple";
-import { CommentCard } from "../ui/cards/comment-card";
 import { BookCard } from "../ui/cards/book-card";
 
 export default function Profile() {
@@ -25,7 +24,7 @@ export default function Profile() {
           </div>
 
           <div className="pt-12 flex">
-            <div className="min-w-[628px] w-full overflow-auto">
+            <div className="min-w-[628px] w-full h-screen overflow-auto">
               <div className="w-full h-12 relative mb-8">
                 <input
                   className="w-full h-12 border-[1px] px-5 py-[14px] border-solid border-gray-500 bg-gray-800 rounded-[4px] focus:outline-none
@@ -47,14 +46,14 @@ export default function Profile() {
                   <h2>Há 2 meses</h2>
                   <BookCard {...booksMock[1]} />
                 </div>
-              </div>
-              <div className="mt-4">
-                <h2>Ontem</h2>
-                <BookCard {...booksMock[2]} />
-              </div>
-              <div className="mt-4">
-                <h2>Há 2 dias</h2>
-                <BookCard {...booksMock[3]} />
+                <div className="mt-4">
+                  <h2>Ontem</h2>
+                  <BookCard {...booksMock[2]} />
+                </div>
+                <div className="mt-4">
+                  <h2>Há 2 dias</h2>
+                  <BookCard {...booksMock[3]} />
+                </div>
               </div>
             </div>
 
