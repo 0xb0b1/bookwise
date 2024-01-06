@@ -1,7 +1,7 @@
 import React from "react";
 import { Rating } from "../rating";
 
-export const Card = (props: any)=> {
+export const CommentCard = (props: any)=> {
   const {title, author, description, image} = props;
 
   return (
