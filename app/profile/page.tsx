@@ -6,10 +6,10 @@ import { MagnifyingGlass } from "@phosphor-icons/react/dist/ssr/MagnifyingGlass"
 import { BookOpen } from "@phosphor-icons/react/dist/ssr/BookOpen";
 import { Books } from "@phosphor-icons/react/dist/ssr/Books";
 
-import { booksMock } from "@/data/books";
 import { UserList } from "@phosphor-icons/react/dist/ssr/UserList";
 import { BookmarkSimple } from "@phosphor-icons/react/dist/ssr/BookmarkSimple";
 import { BookCard } from "../ui/cards/book-card";
+import { books } from "@/data/constants/books";
 
 export default function Profile() {
   return (
@@ -40,19 +40,19 @@ export default function Profile() {
               <div className="max-w-screen">
                 <div className="mt-4">
                   <h2>Há 4 meses</h2>
-                  <BookCard {...booksMock[0]} />
+                  <BookCard {...books[0]} />
                 </div>
                 <div className="mt-4">
                   <h2>Há 2 meses</h2>
-                  <BookCard {...booksMock[1]} />
+                  <BookCard {...books[1]} />
                 </div>
                 <div className="mt-4">
                   <h2>Ontem</h2>
-                  <BookCard {...booksMock[2]} />
+                  <BookCard {...books[2]} />
                 </div>
                 <div className="mt-4">
                   <h2>Há 2 dias</h2>
-                  <BookCard {...booksMock[3]} />
+                  <BookCard {...books[3]} />
                 </div>
               </div>
             </div>

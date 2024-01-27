@@ -34,7 +34,7 @@ export const Sidebar = (props: {}) => {
           <img src="/logo.svg" alt="Logo" />
           <ul className="pt-12 flex flex-col gap-8">
             {navLinksMap?.map((item) => (
-              <li className="flex items-center">
+              <li key={item.href} className="flex items-center">
                 <span
                   className={
                     item?.href === pathname
